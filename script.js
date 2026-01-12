@@ -19,6 +19,8 @@ function createTodoNode(todo,index){
     const checkBox=document.createElement('input');
     checkBox.type='checkbox';
     checkBox.checked = !!todo.completed;
+
+    //This is Arrow function
     checkBox.addEventListener("change", () =>{
         todo.completed = checkBox.checked;
         
